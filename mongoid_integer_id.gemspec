@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email       = 'arthurnn@gmail.com'
   s.files        = Dir.glob("lib/**/*") + %w(README.md Rakefile)
   s.require_paths = ["lib"]
-  s.homepage    = 'http://rubygems.org/gems/mongoid_integer_id'
+  s.homepage    = 'https://github.com/arthurnn/mongoid_integer_id'
 
   s.add_dependency("mongoid", [">= 3.0.0"])
 
