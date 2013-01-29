@@ -1,5 +1,6 @@
 # don't commit Gemfile.lock
 Gemfile.lock
+*.gem
 
 # rvm
 .rvmrc
