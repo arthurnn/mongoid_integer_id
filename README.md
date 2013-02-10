@@ -20,9 +20,28 @@ Or install it yourself as:
 
 Add this code to any Mongoid Document.
 
-    include Mongoid::IntegerId
+```ruby
+class Person
+  include Mongoid::Document
+  include Mongoid::IntegerId
 
-This will replace the field _id with a integer sequence.
+  field :name
+
+end
+```
+
+```
+> person = Person.create!
+> puts person.id
+=> 1
+```
+
+A collection to store the sequences will be created. The default name of the collection is 'sequences'. If you desire to store it in a different collection, you can add this line to your model:
+
+```ruby
+auto_increment(:collection_name)
+```
+
 
 ## Contributing
 
